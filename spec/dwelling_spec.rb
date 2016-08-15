@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe Dwelling do
 
-  let!(:dwelling1)  {Dwelling.new("1A", "IMH", "Sunnyside", "NY", 11104)}
-  let!(:dwelling2)  {Dwelling.new("4", "Mylu st.", "Grand Rapids", "MI", 49501)}
+  let!(:dwelling1)  {Appartment.new("1A", "IMH", "Sunnyside", "NY", 11104)}
+  let!(:dwelling2)  {House.new("4", "Mylu st.", "Grand Rapids", "MI", 49501)}
 
   it "initializes a dwelling" do
     expect(dwelling1.address).to eq("1A")
