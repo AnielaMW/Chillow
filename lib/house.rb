@@ -4,7 +4,7 @@ require_relative 'questions.rb'
 class House < Dwelling
 
   attr_accessor :asking_price
-  
+
   include Questions
 
   def initialize
@@ -12,6 +12,6 @@ class House < Dwelling
   end
 
   def asking_price?
-    @asking_price = Ask_and_answer("What is the Asking Price for this home? ")
+    @asking_price = ask_and_answer("What is the Asking Price for this home? ")
   end
 end
