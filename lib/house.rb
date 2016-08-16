@@ -7,11 +7,9 @@ class House < Dwelling
 
   include Questions
 
-  def initialize
-    @asking_price = nil
-  end
+  @asking_price = 150000
 
-  def asking_price?
-    @asking_price = ask_and_answer("What is the Asking Price for this home? ")
-  end
+  # def ask_price
+  #   @asking_price = ask_and_answer("What is the Asking Price for this home? ")
+  # end
 end

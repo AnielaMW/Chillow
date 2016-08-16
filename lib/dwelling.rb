@@ -1,10 +1,9 @@
 class Dwelling
-  attr_accessor :address, :street, :city, :state, :zip_code
+  attr_accessor :address, :city_or_town, :state, :zip_code
 
-  def initialize(address, street, city, state, zip_code)
+  def initialize(address, city_or_town, state, zip_code)
     @address = address
-    @street = street
-    @city = city
+    @city_or_town = city_or_town
     @state = state
     @zip_code = zip_code
   end
